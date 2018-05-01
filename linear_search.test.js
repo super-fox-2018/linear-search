@@ -14,7 +14,7 @@ describe('Test linearSearch', () => {
   })
   describe('release 1: ', () => {
     it('test banana', () => {
-      const banana_arr = "banana".split()
+      const banana_arr = "banana".split("")
       assert.deepEqual(globalLinearSearch("a", banana_arr), [1, 3, 5])
     })
   })
