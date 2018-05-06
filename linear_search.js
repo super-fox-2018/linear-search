@@ -3,6 +3,16 @@
 // Release 0
 console.log("Linear Search")
 let linearSearch = (target, values) => {
+  let targetAppearance = 0;
+  for(let z = 0; z < values.length; z++){
+    if(values[z] === target){
+      targetAppearance++
+    }
+  }
+  if(targetAppearance === 0){
+    return -1
+  }
+  return targetAppearance;
   //write your code here
 }
 
@@ -16,6 +26,12 @@ console.log(linearSearch(9, random_numbers));
 // Release 1
 console.log("Global Linear Search")
 let globalLinearSearch = (target, values) => {
+  let arrayOfTarget = [];
+  for(let z = 0; z < values.length; z++){
+    if(values[z].toLowerCase() === target.toLowerCase()){
+      arrayOfTarget.push(z);
+    }
+  }return arrayOfTarget;
   //write your code here
 }
 
